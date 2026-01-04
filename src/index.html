@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Клон</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="board">
+        <div class="column" data-column="todo">
+            <div class="column-header">
+                <h2>Сделать</h2>
+            </div>
+            <div class="cards" data-column="todo"></div>
+            <div class="add-card">
+                <button class="add-card-btn">+ Добавить карточку</button>
+                <form class="add-card-form" style="display: none;">
+                    <textarea placeholder="Введите заголовок карточки..."></textarea>
+                    <div class="form-actions">
+                        <button type="submit">Добавить</button>
+                        <button type="button" class="cancel-card-add">✕</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="column" data-column="in-progress">
+            <div class="column-header">
+                <h2>В процессе</h2>
+            </div>
+            <div class="cards" data-column="in-progress"></div>
+            <div class="add-card">
+                <button class="add-card-btn">+ Добавить карточку</button>
+                <form class="add-card-form" style="display: none;">
+                    <textarea placeholder="Введите заголовок карточки..."></textarea>
+                    <div class="form-actions">
+                        <button type="submit">Добавить</button>
+                        <button type="button" class="cancel-card-add">✕</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="column" data-column="done">
+            <div class="column-header">
+                <h2>Готово</h2>
+            </div>
+            <div class="cards" data-column="done"></div>
+            <div class="add-card">
+                <button class="add-card-btn">+ Добавить карточку</button>
+                <form class="add-card-form" style="display: none;">
+                    <textarea placeholder="Введите заголовок карточки..."></textarea>
+                    <div class="form-actions">
+                        <button type="submit">Добавить</button>
+                        <button type="button" class="cancel-card-add">✕</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="ghost-card" class="card ghost" style="display: none;"></div>
+    <!-- The bundle.js will be injected by webpack -->
+</body>
+</html>
